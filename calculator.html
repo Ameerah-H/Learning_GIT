@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <title>CALCULATOR</title>
+    </head>
+    <BODY>
+        <h1>MY CALCULATOR</h1>
+        <input type="text" id="X">
+        <input type="text" id="Y">
+        <p id="result"></p>
+        <input type="button" value="add" id="addButton">
+        <ul id="taskList"></ul>
+
+        <script>
+            let addButton=document.getElementById("addButton");
+            let taskList=document.getElementById("taskList");
+            addButton.onclick=function(){
+                let taskField = document.getElementById("X");
+                let taskFields = document.getElementById("Y");
+                let result = document.getElementById("result");
+                // let sum = taskField + taskFields;
+                // let taskItem = document.createElement("X"+"Y");
+                result.innerText= parseInt(taskField.value) + parseInt(taskFields.value);
+                
+                // taskField.value=""; // for clearing the input feild
+            }
+            
+        </script>
+    </BODY>
+</html>
